@@ -50,10 +50,10 @@
                     <td>{{ product.quantity }}</td>
                     <td>{{ product.pickup_time }}</td>
                     <td>{{ product.charge }}</td>
-                    <td><a href="{% url 'crm:product_edit' pk=product.pk %}" class="btn btn-warning">Edit</a>
+                    <td><a href="{% url 'crm:product_edit' pk=product.pk %}"
+                           class="btn btn-warning">Edit</a></td>
                     <td><a href="{% url 'crm:product_delete' pk=product.pk %}"
                            onclick="return confirm('Are you sure you want to delete?')"
-
                            class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
