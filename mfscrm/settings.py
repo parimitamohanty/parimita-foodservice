@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crm',
+    'mathfilters',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
@@ -158,3 +160,6 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/home'
